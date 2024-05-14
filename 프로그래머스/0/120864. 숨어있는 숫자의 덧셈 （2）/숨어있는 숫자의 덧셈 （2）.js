@@ -4,17 +4,19 @@ function solution(my_string) {
     
     let nums = []
     const numArr = []
+    
+    let val = ''
  
-    for(let i = 0; i < arr.length+1; i++){
+    for(let i = 0; i < arr.length +1 ; i++){
       let val = arr[i]
-
-      if(isNaN(val)){
+      console.log(val)
+      if(!isNaN(val)){
+        nums.push(val)
+      } else{
         if(nums.length > 0){
           numArr.push(Number(nums.join('')));
           nums = []
         }
-      } else{
-        nums.push(val)
       }
     }
     
