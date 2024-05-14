@@ -7,15 +7,14 @@ function solution(my_string) {
  
     for(let i = 0; i < arr.length+1; i++){
       let val = arr[i]
-      
-      if(!isNaN(val)){
-        nums.push(val)
-        
-      } else{
+
+      if(isNaN(val)){
         if(nums.length > 0){
           numArr.push(Number(nums.join('')));
           nums = []
         }
+      } else{
+        nums.push(val)
       }
     }
     
