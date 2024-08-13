@@ -1,0 +1,11 @@
+{
+  "name": "algorithm-test",
+  "packageManager": "yarn@3.6.4",
+  "scripts": {
+    "test": "node ./run/index.js"
+  },
+  "dependencies": {
+    "@types/node": "^22.2.0",
+    "node": "^22.4.0"
+  }
+}
